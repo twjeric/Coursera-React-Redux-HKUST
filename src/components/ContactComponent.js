@@ -134,14 +134,14 @@ class Contact extends Component {
                                     <div className="form-check">
                                         <Label check>
                                             <Control.checkbox model=".agree" name="agree"
-                                                className="form-check-input" />
+                                                className="form-check-input" defaultValue={false} />
                                             <strong> May we contact you?</strong>
                                         </Label>
                                     </div>
                                 </Col>
                                 <Col md={{size: 3, offset: 1}}>
                                     <Control.select model=".contactType" name="contactType" 
-                                        className="form-control">
+                                        className="form-control" defaultValue="Tel.">
                                         <option>Tel.</option>
                                         <option>Email</option>
                                     </Control.select>
